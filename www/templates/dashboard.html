@@ -1,0 +1,10 @@
+<ion-view view-title="Employees" name="dashboard-view">
+  <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+  </ion-nav-buttons>
+ 
+  <ion-content class="padding">
+   <ion-item collection-repeat="item in data" ui-sref="main.detail({id: item.id})">{{item.name}}
+  </ion-item>
+  </ion-content>
+</ion-view>

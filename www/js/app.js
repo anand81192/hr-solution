@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic','ngMockE2E'])
+angular.module('starter', ['ionic','ionic.service.core','ngMockE2E'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -110,3 +110,15 @@ angular.module('starter', ['ionic','ngMockE2E'])
     }
   });
 })
+ .run(function($ionicPlatform) {
+   $ionicPlatform.ready(function() {
+     var push = new Ionic.Push({
+       "debug": true
+     });
+  
+     push.register(function(token) {
+       console.log("My Device token:",token.token);
+       push.saveToken(token);  // persist the token in the Ionic Platform
+     });
+   });
+ })

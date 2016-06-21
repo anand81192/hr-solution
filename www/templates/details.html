@@ -1,18 +1,21 @@
 <ion-view view-title="Employee Details" >
   <ion-content class="padding">
-  <ion-item collection-repeat="item in user" >
-  		<h1>{{item.name}}</h1>
-  		<h2>{{item.post}}</h2>
-  		<h3>{{item.technology}}</h3>
-  <ion-item> <h3> Personal information </h3> </ion-item>
-  <ion-item > passport name : {{item.passportname}}</ion-item>
-  <ion-item > Gender : {{item.gender}}</ion-item>
-  <ion-item > DOB : {{item.dob}}</ion-item>
-  <ion-item > join date : {{item.dob}}</ion-item>
-  <ion-item > department : {{item.technology}}</ion-item>
-  <ion-item > designation : {{item.designation}}</ion-item>
-  <ion-item > religion : {{item.religion}}</ion-item>
-  </ion-item>
+  <ion-list>
+    <ion-item collection-repeat="item in user" >
+    <img  width="100" height="100" src="{{item.imgurl}}" alt="">  
+    		<h1>{{item.name}}</h1>
+    		<h2>{{item.post}}</h2>
+    		<h3>{{item.technology}}</h3>
+    <ion-item> <h3> Personal information </h3> </ion-item>
+    <ion-item > passport name : {{item.passportname}}</ion-item>
+    <ion-item > Gender : {{item.gender}}</ion-item>
+    <ion-item > DOB : {{item.dob}}</ion-item>
+    <ion-item > join date : {{item.dob}}</ion-item>
+    <ion-item > department : {{item.technology}}</ion-item>
+    <ion-item > designation : {{item.designation}}</ion-item>
+    <ion-item > religion : {{item.religion}}</ion-item>
+    </ion-item>
+  </ion-list>
       
   </ion-content>
 </ion-view>

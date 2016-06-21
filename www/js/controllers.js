@@ -51,7 +51,8 @@ angular.module('starter')
   	dob:'10/10/1992',
   	join_date:'10/10/2010',
   	designation:'director of IT',
-  	religion:'Hindu'
+  	religion:'Hindu',
+    imgurl:'/js/default_user.png'
 
   },{
   	id:124,
@@ -63,7 +64,8 @@ angular.module('starter')
   	dob:'10/10/1992',
   	joindate:'10/10/2010',
   	designation:'director of IT',
-  	religion:'islam'
+  	religion:'islam',
+    imgurl:'/js/default_user.png'
   },
   {
     	id:125,
@@ -75,7 +77,8 @@ angular.module('starter')
     	dob:'10/10/1992',
     	joindate:'10/10/2010',
     	designation:'director of IT',
-    	religion:'catholic'
+    	religion:'catholic',
+      imgurl:'/js/default_user.png'
     },
     {
       	id:126,
@@ -87,7 +90,8 @@ angular.module('starter')
       	dob:'10/10/1992',
       	joindate:'10/10/2010',
       	designation:'director of IT',
-      	religion:'hindhu'
+      	religion:'hindhu',
+        imgurl:'/js/default_user.png'
       },
       {
         	id:127,
@@ -99,7 +103,8 @@ angular.module('starter')
         	dob:'10/10/1992',
         	joindate:'10/10/2010',
         	designation:'director of IT',
-        	religion:'islam'
+        	religion:'islam',
+          imgurl:'/js/default_user.png'
         },
         {
           	id:128,
@@ -111,7 +116,8 @@ angular.module('starter')
           	dob:'10/10/1992',
           	joindate:'10/10/2010',
           	designation:'director of IT',
-          	religion:'islam'
+          	religion:'islam',
+            imgurl:'/js/default_user.png'
           },
           {
             	id:129,
@@ -123,7 +129,8 @@ angular.module('starter')
             	dob:'10/10/1992',
             	joindate:'10/10/2010',
             	designation:'director of IT',
-            	religion:'christian'
+            	religion:'christian',
+              imgurl:'/js/default_user.png'
             },
             {
               	id:130,
@@ -135,7 +142,8 @@ angular.module('starter')
               	dob:'10/10/1992',
               	joindate:'10/10/2010',
               	designation:'director of IT',
-              	religion:'islam'
+              	religion:'islam',
+                imgurl:'/js/default_user.png'
               }]
   var param1 =  $stateParams.id;
   console.log('test:',param1);

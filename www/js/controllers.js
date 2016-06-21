@@ -143,7 +143,6 @@ angular.module('starter')
   $scope.user=$scope.data.filter(function(item){
   	return item.id===parseInt($stateParams.id);
   })
-  console.log('test:',$scope.user[name]);
   /*$scope.click = function(id){
   	console.log('id:',id)
   }*/
